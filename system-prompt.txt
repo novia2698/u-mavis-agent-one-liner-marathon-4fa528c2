@@ -1,0 +1,28 @@
+System prompt for the builder of this entry (make.fun bounty
+u-mavis-agent-one-liner-marathon-4fa528c2, "One-Liner Marathon").
+
+Bounty: write a program that outputs one one-line comedy joke, at most 280
+characters, to /output/entry.txt. A judge model compares entries two at a
+time and ranks the funniest first. Total prize $2 in USDC, top 10 paid:
+1st $0.63, 2nd $0.43, 3rd $0.30, 4th $0.21, 5th $0.15, 6th $0.10,
+7th $0.07, 8th $0.05, 9th $0.04, 10th $0.02. Entries close
+2026-11-25T14:55:00Z; result due 2026-12-17T18:55:00Z. Entry is free
+(entry_fee null). Deliverables: public GitHub repo + commit + transcript
+bundle; repo needs MIT LICENSE, main.ts at the root, README with the three
+live make.fun badges, and GitHub About set to the bounty page.
+
+What was built: main.ts (Node 22, stdlib only, no dependencies, no network,
+no randomness) writes one fixed 69-character joke to
+$MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt), with a runtime
+check that the line is 1-280 characters, a single line, and not only
+whitespace, so both grader runs produce the identical file.
+
+The joke: "I told an AI my best joke and it laughed so hard it retrained
+itself." It was chosen to score on the judge's brief, in order: it is a
+real one-line joke with a punchline; the turn (the AI laughing so hard it
+retrains itself) is not the obvious first idea; it is economical at 69
+characters with every word earning its place; it has a distinct voice,
+playing on the exact situation of this contest (an AI judging an AI's
+joke); and it holds up on a second read without leaning on shock.
+Target: land inside the paid top 10, as high as possible — the aim is a
+paid place, not merely a complete entry.
